@@ -18,7 +18,7 @@ The model uses meta-llama/Llama-3.2-3B as its base model and is fine-tuned on se
 
 ## Improve model perfomance using data centric approach 
 In the first iterations of finetuning the LLM we used a dataset called mlabonne/FineTome-100k. This dataset can be found on Huggingface. The datasets consists of 100k rows of conversations between a human (asking for about a coding subject) and an agent answering the coding problem. Here a sample of some lines of the FineTome dataset: 
-![FineToma dataset](Images/FineTomeSample.png)
+![FineToma dataset](FineTomeSample.png)
 
 We used this dataset flytech/python-codes-25k to improve our fintuning. This dataset consists of 25k rows and have the following fields: 
 
@@ -28,7 +28,7 @@ output: Python code that accomplishes the task
 text: All fields combined together
 
 Here is a sample of some lines of the dataset: 
-![FineToma dataset](Images/FlytechSample.png)
+![FineToma dataset](FlytechSample.png)
 
 
 Here is the link to the finetuned model using the FineTome dataset: https://huggingface.co/spaces/astegaras/iris_before_code 
@@ -39,11 +39,11 @@ Here is the link to the finetuned model using the python-codes-25k dataset: http
 ### Difference of Model answers for the same request
 
 **FineTome Finetune model**
-![FineToma dataset](Images/AnswerFineTomeModel.png)
+![FineToma dataset](AnswerFineTomeModel.png)
 
 
 **Python-codes-25k Finetune model**
-![FineToma dataset](Images/AnswerFlytechModel.png)
+![FineToma dataset](AnswerFlytechModel.png)
 
 Here, you can clearly see that the second model is much better at answering the user's request. The first model gives more of an instruction-like explanation on how to build a Python program that performs the task. The second model, however, provides executable Python code that directly solves the problem, and it is very straightforward.
 
