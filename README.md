@@ -39,7 +39,7 @@ Here is the link to the finetuned model using the python-codes-25k dataset: http
 ### Difference of Model answers for the same request
 
 **FineTome Finetune model**
-![FineToma dataset](AnswerFineTomeModel.png)
+![FineToma dataset](AnswerFinetomeModel.png)
 
 
 **Python-codes-25k Finetune model**
